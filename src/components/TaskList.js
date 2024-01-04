@@ -1,4 +1,4 @@
-import { connect, useDispatch, useSelector } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
 import './TaskList.css'
 import Header from './Header';
 import { useNavigate } from "react-router-dom";
@@ -20,7 +20,7 @@ function TaskList(props) {
     return (
         <>
             <Header />
-            <h1>task list</h1>
+            <h1>Task List</h1>
             {tasks?.map((task, index) => <div key={index + 'i'} className="card">
                 <div
                     className="content">

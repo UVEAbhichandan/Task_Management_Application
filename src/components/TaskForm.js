@@ -28,12 +28,12 @@ function TaskForm(props) {
       <Header />
       <div className='form'>
         <h1>TASK FORM</h1>
-        <label for='name'>TASK NAME:</label>
-        <input id='name' value={task.name} onChange={(v) => setTask({ ...task, name: v.target.value })}></input> <br />
-        <label for='desc'>DESCRIPTION:</label>
-        <input id='desc' value={task.desc} onChange={(v) => setTask({ ...task, desc: v.target.value })}></input> <br />
-        <label for='date'>DUE DATE:</label>
-        <input id='date' type='date' value={task.date} onChange={(v) => setTask({ ...task, date: v.target.value })} required></input> <br />
+        <label htmlFor='name'>TASK NAME:</label>
+        <input required id='name' value={task.name} onChange={(v) => setTask({ ...task, name: v.target.value })}></input> <br />
+        <label htmlFor='desc'>DESCRIPTION:</label>
+        <input required id='desc' value={task.desc} onChange={(v) => setTask({ ...task, desc: v.target.value })}></input> <br />
+        <label htmlFor='date'>DUE DATE:</label>
+        <input required id='date' type='date' value={task.date} onChange={(v) => setTask({ ...task, date: v.target.value })} required></input> <br />
         <button onClick={handleAdd}>ADD TASK</button>
       </div>
     </div>
